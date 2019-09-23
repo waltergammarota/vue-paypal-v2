@@ -1,15 +1,29 @@
 {
   "name": "vue-paypal-v2",
   "version": "0.1.0",
-  "private": true,
+  "description": "Simple Paypal Checkout V2",
+  "author": {
+    "name": "Walter Gammarota",
+    "email": "waltergammarota@gmail.com"
+  },
+  "private": false,
+  "repository": "https://github.com/waltergammarota/vue-paypal-v2",
+  "bugs": "https://github.com/waltergammarota/vue-paypal-v2/issues",
+  "keywords": ["paypal", "paypal checkout"],
+  "license": "MIT",
+  "files": ["dist"],
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build:npm": "vue-cli-service build --target lib --name PaypalButton src/components/PaypalButton/PaypalButton.vue"
   },
+  "main": "dist/PaypalButton.umd.js",
+  "unpkg": "dist/PaypalButton.umd.min.js",
+
   "dependencies": {
     "core-js": "^2.6.5",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-plugin-load-script": "^1.2.0"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.11.0",

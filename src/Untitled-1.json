@@ -1,0 +1,166 @@
+{
+    "create_time": "2019-09-23T18:30:43Z",
+    "update_time": "2019-09-23T18:30:43Z",
+    "id": "5BP62213WP620693J",
+    "intent": "CAPTURE",
+    "status": "COMPLETED",
+    "payer": {
+        "email_address": "client@shopy777.com",
+        "payer_id": "TCHSSGNAY9LMG",
+        "address": {
+            "address_line_1": "1 Main St",
+            "admin_area_2": "San Jose",
+            "admin_area_1": "CA",
+            "postal_code": "95131",
+            "country_code": "US"
+        },
+        "name": {
+            "given_name": "Walter",
+            "surname": "Gammarota"
+        },
+        "phone": {
+            "phone_number": {
+                "national_number": "4084750879"
+            }
+        }
+    },
+    "purchase_units": [
+        {
+            "description": "Test 1",
+            "reference_id": "default",
+            "amount": {
+                "value": "53.11",
+                "currency_code": "USD",
+                "breakdown": {
+                    "item_total": {
+                        "value": "53.11",
+                        "currency_code": "USD"
+                    },
+                    "shipping": {
+                        "value": "10.00",
+                        "currency_code": "USD"
+                    },
+                    "handling": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    },
+                    "insurance": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    },
+                    "shipping_discount": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    }
+                }
+            },
+            "payee": {
+                "email_address": "barco.03-facilitator@gmail.com",
+                "merchant_id": "YQZCHTGHUK5P8"
+            },
+            "items": [
+                {
+                    "name": "Test 1",
+                    "unit_amount": {
+                        "value": "10.00",
+                        "currency_code": "USD"
+                    },
+                    "tax": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    },
+                    "quantity": "1",
+                    "sku": "1"
+                },
+                {
+                    "name": "Test 2",
+                    "unit_amount": {
+                        "value": "9.90",
+                        "currency_code": "USD"
+                    },
+                    "tax": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    },
+                    "quantity": "2",
+                    "sku": "2"
+                },
+                {
+                    "name": "Test 3",
+                    "unit_amount": {
+                        "value": "7.77",
+                        "currency_code": "USD"
+                    },
+                    "tax": {
+                        "value": "0.00",
+                        "currency_code": "USD"
+                    },
+                    "quantity": "3",
+                    "sku": "3"
+                }
+            ],
+            "shipping": {
+                "name": {
+                    "full_name": "Walter Gammarota"
+                },
+                "address": {
+                    "address_line_1": "1 Main St",
+                    "admin_area_2": "San Jose",
+                    "admin_area_1": "CA",
+                    "postal_code": "95131",
+                    "country_code": "US"
+                }
+            },
+            "payments": {
+                "captures": [
+                    {
+                        "status": "COMPLETED",
+                        "id": "1PU14343PV4648721",
+                        "final_capture": true,
+                        "create_time": "2019-09-23T18:30:43Z",
+                        "update_time": "2019-09-23T18:30:43Z",
+                        "amount": {
+                            "value": "53.11",
+                            "currency_code": "USD"
+                        },
+                        "seller_protection": {
+                            "status": "ELIGIBLE",
+                            "dispute_categories": [
+                                "ITEM_NOT_RECEIVED",
+                                "UNAUTHORIZED_TRANSACTION"
+                            ]
+                        },
+                        "links": [
+                            {
+                                "href": "https://api.sandbox.paypal.com/v2/payments/captures/1PU14343PV4648721",
+                                "rel": "self",
+                                "method": "GET",
+                                "title": "GET"
+                            },
+                            {
+                                "href": "https://api.sandbox.paypal.com/v2/payments/captures/1PU14343PV4648721/refund",
+                                "rel": "refund",
+                                "method": "POST",
+                                "title": "POST"
+                            },
+                            {
+                                "href": "https://api.sandbox.paypal.com/v2/checkout/orders/5BP62213WP620693J",
+                                "rel": "up",
+                                "method": "GET",
+                                "title": "GET"
+                            }
+                        ]
+                    }
+                ]
+            }
+        }
+    ],
+    "links": [
+        {
+            "href": "https://api.sandbox.paypal.com/v2/checkout/orders/5BP62213WP620693J",
+            "rel": "self",
+            "method": "GET",
+            "title": "GET"
+        }
+    ]
+}
